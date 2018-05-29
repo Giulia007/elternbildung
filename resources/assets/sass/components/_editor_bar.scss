@@ -1,0 +1,57 @@
+/*Tool bar*/
+.editorBar {
+  visibility: hidden;
+  width: 76px;
+  height: 33px;
+  background-color: #2a2a2a;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.editorBar a {
+  /*float: inherit;*/
+  border-radius: 5px;
+  text-align: center;
+  margin-right: 4px;
+  margin-left: 4px;
+  width: 20%;
+  height: 18px;
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white;
+  font-size: 18px;
+}
+
+.editorBar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+/* Toolbar arrow */
+.editorBar::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2a2a2a transparent transparent transparent;
+}
+
+.highlight_yellow {
+  background: rgba(249, 233, 169, 0.4);
+}
+
+.highlight_blue {
+  background: rgba(132, 184, 241, 0.43);
+}
+
+
+::selection {
+  background: rgba(255, 162, 76, 0.5);
+}
+/* Mozilla based - Gecko Rendering */
+::-moz-selection {
+  background: rgba(255, 162, 76, 0.5);
+}

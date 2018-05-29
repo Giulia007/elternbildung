@@ -1,0 +1,76 @@
+.mobile-background {
+  display: none;
+}
+#accordion_toggle {
+  display: none;
+}
+
+@include media-breakpoint-down(sm) {
+  #accordion_toggle {
+    font-size: 0.7rem;
+    color: white;
+    display: block;
+    width: 50px;
+    padding: 3px;
+    background: theme-color("orange");
+    right: 0;
+    position: fixed;
+    top: 20%;
+    z-index: 999;
+  }
+  #article_accordion {
+    .mobile-background {
+      display: none;
+
+      z-index: 99;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.8);
+      position: fixed;
+      height: 100%;
+      width: 100%;
+
+      div {
+        color: white;
+        text-align: right;
+        padding: 20px;
+      }
+    }
+    .slide-in-on-mobile {
+      z-index: 999;
+      top: 30%;
+      right: 0;
+      bottom: 0;
+      display: block;
+      position: fixed;
+      height: 100%;
+      max-width: 18rem;
+
+      animation: slide-out 0.5s forwards;
+    }
+
+    &.open {
+      .slide-in-on-mobile {
+        animation: slide-in 0.5s forwards;
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

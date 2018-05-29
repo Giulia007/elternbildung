@@ -1,0 +1,117 @@
+#accordion {
+  z-index: 2;
+}
+
+.card a {
+  color: $gray-700;
+
+}
+
+ a:hover{
+  color: theme-color("primary");
+}
+
+
+.wrap {
+  width: 100%;
+}
+
+#primary-content-wrap {
+  position: relative;
+}
+
+.floating-div {
+  width: 16rem;
+}
+
+.accordion_icon {
+  padding-left: 0.5rem;
+}
+
+.accordion_hover:hover {
+  color: $hover-icon-color;
+  cursor: pointer;
+}
+
+.sticky {
+  position: fixed;
+  top: 2.2rem;
+  //right: 1rem;
+  margin-right: 0.8rem;
+}
+
+.abs {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.circle {
+  margin-left: 0.4rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 0.9rem;
+  display: inline-block;
+}
+
+.black {
+  background-color: #000;
+  border: 1px solid darkslategrey;
+}
+
+.white {
+  background-color: #fff;
+  border: 1px solid darkslategrey;
+}
+
+.yellow {
+  background-color: #eded1a;
+  border: 1px solid darkslategrey;
+}
+
+.blue {
+  background-color: #1227e5;
+  border: 1px solid darkslategrey;
+}
+
+.card-body {
+  padding: 0.7rem;
+  min-width: 1.6rem;
+
+  a{
+    text-decoration: none;
+  }
+}
+
+#avatar_img {
+  width: 3rem;
+  height: auto;
+}
+
+.card-body img {
+  height:2rem;
+  margin-right: 0.5rem;
+}
+
+.card-body .fa {
+  margin-right: 0.7rem;
+  font-size: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
